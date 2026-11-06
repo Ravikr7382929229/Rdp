@@ -35,10 +35,60 @@ Azure free account se **free Windows RDP** kaise lete hain, step by step — aur
    - Billing address bank ke record se match karna chahiye.
 6. Agreement accept karo → **Sign up** → **Go to the portal**.
 
-### Student ho? Ye route lo — card ki zarurat nahi
-**https://azure.microsoft.com/en-us/free/students/** — college email (`.ac.in` / `.edu`) se verify karo → **$100 credit, 12 mahine**, **koi card nahi**, aur wahi 750 ghante/month VM milta hai. Bihar/India ke students ke liye ye sabse aasan raasta hai.
-
 > Ek vyakti = **ek hi free account**. Doosra banana T&C violation hai, account band ho sakta hai.
+
+---
+
+## 2b. Student ho? — Azure for Students (card ki zarurat nahi)
+
+**https://azure.microsoft.com/en-us/free/students/** — college email se verify karo, bas.
+
+### Kya milta hai
+
+| Cheez | Student offer | Normal free account |
+|---|---|---|
+| Credit | **$100 (~₹8,800)** | $200 (~₹17,600) |
+| Credit kitne din | **12 mahine** | sirf **30 din** |
+| Credit card | **Nahi chahiye** | Card + ₹2 hold |
+| Verification | College email (`.ac.in`/`.edu`) | Phone + card |
+| Renewal | **Har saal renew** (jab tak student ho) | Nahi |
+| Windows/Linux VM | **750 h/month × 3 sizes** (`B1s`, `B2pts_v2`, `B2ats_v2`) | Same |
+| 12-mahine wale free services | **20+ services** | Same |
+| Always-free services | **65+** | Same |
+| Azure OpenAI / AI services | Credit se access | Credit se access (30 din) |
+| Quota increase (GPU etc.) | ❌ Nahi milta | ❌ Nahi |
+
+**Student offer me 12 mahine tak:** VM (750 h/month = ek VM 24×7), Blob 5 GB, Azure Files 5 GB, SQL Database free tier (100,000 vCore-seconds/month + 32 GB), Functions 10 lakh requests/month, App Service F1, Static Web Apps, Container Registry (1 standard, 100 GB), Azure DevOps (5 users, unlimited private repos), Cosmos DB free tier, AI services ke monthly free amounts, aur Azure Machine Learning.
+
+### Eligibility (2026 terms)
+- **18+ age**
+- **Full-time** student, **accredited degree-granting** institute (2- or 4-year). MOOC / coaching / for-profit course **nahi** chalega — Bihar ka koi bhi AICTE/UGC recognised college, engineering college, ya university theek hai
+- Verification: **college email** — ya agar domain registered nahi hai to **enrolment letter / dated student ID / transcript upload** karo. **Undated ya unreadable document = reject** (sabse common reason)
+- **Ek subscription per person**, non-transferable
+
+### Agar college email domain register nahi hai (kaafi Indian colleges me hota hai)
+1. **Document verification** try karo — offer page pe "verify another way" / support se proof upload. Dated enrolment letter ya fees receipt pe college stamp ho to best.
+2. **Azure for Students Starter** — https://azure.microsoft.com/en-us/free/students/starter — **16+** (India), koi credit nahi, koi card nahi, par App Service / Functions / MySQL / App Insights / DevOps ke free tiers milte hain. RDP VM nahi milta, lekin learning + hosting ke liye kaam chal jaata hai.
+3. **GitHub Student Developer Pack** — https://education.github.com/pack — isme bhi wahi Azure offer listed hai, aur GitHub Education se verify hone par Copilot Student, GitHub Pro, Codespaces, free domain, JetBrains, DigitalOcean credit etc. milte hain. Ek hi baar verify, dono jagah kaam.
+4. **College IT/office se** apne domain ko Microsoft ke education verification me register karwa lo — poore batch ke kaam aayega.
+
+### Student offer ke catch (padh lo)
+- **$100 = 12 mahine ka budget, hard stop.** Khatam hone par subscription **disable** ho jaata hai — bill nahi aata. **90 din** ke andar Pay-As-You-Go pe upgrade karoge to resources bache rehte hain, warna delete.
+- **12-mahine wale free allowances sirf naye Azure customers ko** milte hain — saal ke renewal pe credit milta hai par "first 12 months free" waale quotas dobara nahi milte.
+- **Unused credit roll over nahi hota.**
+- **Marketplace, support plans, third-party products credit se nahi chalte.**
+- **Quota increase nahi** — GPU/ML bade machines realistically nahi.
+- 750 ghante = **ek** free-size VM 24×7. Do VM saath chalaoge to ~15 din me khatam.
+
+### Budget math (Central India, indicative)
+| Setup | Free period ke andar | 12 mahine ke baad |
+|---|---|---|
+| `B2ats_v2` Windows 24×7 | **₹0** (750 h quota) | ~$11/month ≈ **₹970/month** |
+| 64 GiB P6 Premium SSD | ₹0 (2 disks free) | ~₹350/month/disk |
+| Basic dynamic public IP | ₹0 (750 h) | ~₹250/month |
+
+> **Warning:** internet pe "free edu email generator" (EduMailFree jaise) se student verify karne ki tricks milti hain — wo **fraud** hai, Microsoft pakadta hai aur account + card permanently ban ho jaata hai. Apna asli college email hi use karo.
+
 
 ---
 
